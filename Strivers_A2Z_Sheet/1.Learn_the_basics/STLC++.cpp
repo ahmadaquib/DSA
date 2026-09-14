@@ -22,8 +22,8 @@ void explainPair()
     pair<int, int> arr[] = {{1, 5}, {2, 4}, {5, 1}};
     cout << "arr[1].second: " << arr[1].second << endl;
 
-    cout << "Time Complexity -> access .first/.second: O(1)\n";
-    cout << "Space Complexity -> O(1)\n";
+    // Time Complexity -> access .first/.second: O(1)
+    // Space Complexity -> O(1)
 }
 
 void explainVector()
@@ -114,8 +114,8 @@ void explainVector()
         cout << "empty after clear: " << v.empty() << endl;
     }
 
-    cout << "Time Complexity -> push/pop_back: O(1) amortized | access []/at/back: O(1) | insert/erase middle: O(n)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> push/pop_back: O(1) amortized | access []/at/back: O(1) | insert/erase middle: O(n)
+    // Space Complexity -> O(n)
 }
 
 void explainList()
@@ -136,8 +136,8 @@ void explainList()
     // begin(), end(), rbegin(), rend(), clear(), insert(), size(), swap()
     // NOTE: no random access -> no [] or .at()
 
-    cout << "Time Complexity -> push/pop front & back: O(1) | insert/erase at known iterator: O(1) | no random access\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> push/pop front & back: O(1) | insert/erase at known iterator: O(1) | no random access
+    // Space Complexity -> O(n)
 }
 
 void explainDeque()
@@ -166,8 +166,8 @@ void explainDeque()
     // rest of the functions are same as vector:
     // begin(), end(), rbegin(), rend(), clear(), insert(), size(), swap()
 
-    cout << "Time Complexity -> push/pop front & back: O(1) | random access []: O(1) | insert/erase middle: O(n)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> push/pop front & back: O(1) | random access []: O(1) | insert/erase middle: O(n)
+    // Space Complexity -> O(n)
 }
 
 void explainStack()
@@ -190,8 +190,8 @@ void explainStack()
     stack<int> st1, st2;
     st1.swap(st2); // O(1), just swaps internal container pointers
 
-    cout << "Time Complexity -> push/pop/top: O(1)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> push/pop/top: O(1)
+    // Space Complexity -> O(n)
 }
 
 void explainQueue()
@@ -209,8 +209,8 @@ void explainQueue()
     q.pop();
     cout << "front after pop: " << q.front() << endl;
 
-    cout << "Time Complexity -> push/pop/front/back: O(1)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> push/pop/front/back: O(1)
+    // Space Complexity -> O(n)
 }
 
 void explainPQ()
@@ -241,8 +241,8 @@ void explainPQ()
         cout << "min-heap top: " << pq.top() << endl;
     }
 
-    cout << "Time Complexity -> push/pop: O(log n) | top: O(1)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> push/pop: O(log n) | top: O(1)
+    // Space Complexity -> O(n)
 }
 
 void explainSet()
@@ -300,8 +300,8 @@ void explainSet()
     cout << "lower_bound(2): " << (lb != st.end() ? to_string(*lb) : "end") << endl;
     cout << "upper_bound(3): " << (ub != st.end() ? to_string(*ub) : "end") << endl;
 
-    cout << "Time Complexity -> insert/erase/find/lower_bound/upper_bound: O(log n)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> insert/erase/find/lower_bound/upper_bound: O(log n)
+    // Space Complexity -> O(n)
 }
 
 void explainMultiSet()
@@ -335,8 +335,8 @@ void explainMultiSet()
     cout << endl;
 
     // rest of the functions are the same as set
-    cout << "Time Complexity -> insert/erase/find: O(log n)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> insert/erase/find: O(log n)
+    // Space Complexity -> O(n)
 }
 
 void explainUSet()
@@ -356,8 +356,8 @@ void explainUSet()
     // rest of the functions are the same as set
     // faster on average than set, but worst case degrades badly on hash collisions
 
-    cout << "Time Complexity -> insert/erase/find: O(1) average, O(n) worst case (collisions)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> insert/erase/find: O(1) average, O(n) worst case (collisions)
+    // Space Complexity -> O(n)
 }
 
 void explainMap()
@@ -392,8 +392,8 @@ void explainMap()
 
     // erase(key), erase(iterator), erase(range), count(), size(), swap() work as in set
 
-    cout << "Time Complexity -> []/insert/erase/find/lower_bound/upper_bound: O(log n)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> []/insert/erase/find/lower_bound/upper_bound: O(log n)
+    // Space Complexity -> O(n)
 }
 
 void explainMultiMap()
@@ -401,8 +401,8 @@ void explainMultiMap()
     cout << "\n--- Multimap ---\n";
     // same as map, but allows duplicate keys
     // mpp[key] cannot be used here since one key can map to many values
-    cout << "Time Complexity -> insert/erase/find: O(log n)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> insert/erase/find: O(log n)
+    // Space Complexity -> O(n)
 }
 
 void explainUnorderedMap()
@@ -410,8 +410,8 @@ void explainUnorderedMap()
     cout << "\n--- Unordered Map ---\n";
     // same relationship to map as unordered_set has to set:
     // no ordering, better average complexity, worse worst case
-    cout << "Time Complexity -> []/insert/erase/find: O(1) average, O(n) worst case (collisions)\n";
-    cout << "Space Complexity -> O(n)\n";
+    // Time Complexity -> []/insert/erase/find: O(1) average, O(n) worst case (collisions)
+    // Space Complexity -> O(n)
 }
 
 // sorts pairs by second element ascending; if second is equal, by first element descending
@@ -498,7 +498,7 @@ void explainExtra()
         cout << "max: " << maxi << " | min: " << mini << endl;
     }
 
-    cout << "Time Complexity -> sort: O(n log n) | next_permutation: O(n) per call | max/min_element: O(n) | popcount: O(1)\n";
+    // Time Complexity -> sort: O(n log n) | next_permutation: O(n) per call | max/min_element: O(n) | popcount: O(1)
 }
 
 int main()

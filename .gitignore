@@ -1,6 +1,9 @@
 # C++ build/output files
 *.exe
 *.obj
+*.o
+*.out
+*.exp
 *.ilk
 *.pdb
 *.idb
@@ -12,7 +15,9 @@
 *.suo
 
 # VS Code
-.vscode/
+.vscode/*
+!.vscode/tasks.json
+!.vscode/c_cpp_properties.json
 
 # CMake
 build/
@@ -23,4 +28,8 @@ cmake-build-*/
 Thumbs.db
 
 # Input & Output
-*.txt
+Strivers_A2Z_Sheet/input.txt
+Strivers_A2Z_Sheet/output.txt
+
+# Folder Structure
+DSA-structure.txt

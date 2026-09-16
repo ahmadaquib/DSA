@@ -124,28 +124,3 @@ int main() {
 
     return 0;
 }
-
-/*
-Own notes - alternate Hoare-style partition (pivot = arr[low]) worked out
-by hand, kept here for reference:
-
-qs(arr, low, high) {
-    if (low < high) {
-        pIndex = f(arr, low, high);
-        qs(arr, low, pIndex - 1);
-        qs(arr, pIndex + 1, high);
-    }
-}
-
-f(arr, low, high) {
-    pivot = arr[low];
-    i, j = low, high;
-    while (i < j) {
-        while (arr[i] <= pivot && i <= high) i++;
-        while (arr[j] > pivot && j >= low) j--;
-        if (i < j) swap(arr[i], arr[j]);
-    }
-    swap(arr[low], arr[j]);
-    return j;
-}
-*/
